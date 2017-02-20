@@ -18,7 +18,7 @@ class PigLatinizer
 			word << "way"
 		else 
 			vowel_split = word.split(/([aeiou].*)/)
-			word = vowel_split[1] + vowel_split[0] + "ay"
+			word = "#{vowel_split[1]}#{vowel_split[0]}ay"
 		end
 	end
 end
